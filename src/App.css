@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #ffeda3 !important;
+}
+
+/******************************* NAVBAR *******************************/
+nav {
+  z-index: 2;
+}
+.p-nav{
+  display: inline-block;
+  margin-top:12px;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+/******************************* MENU LINKS *******************************/
+nav a.nav-link {
+  /* font-size: 0.8rem; */
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+.bg-blue{
+  background-color: #2940d3;
+  color: #ffeda3;
+}
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+}
+.navbarbrand{
+  color: #f9ab00;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Roboto Condensed";
+  font-size: 32px;
+}
+.navbarbrand:hover{
+  color: #f9ab00;
+  
+}
+
+.main-heading{
+  margin:20px auto !important;
+  font-family:"Roboto Condensed", sans-serif;
+  color: #f9ab00;
+  font-weight: 600;
+}
+.main-text{
+  text-transform: lowercase;
+  font-size: 18px;
+}
+.disclaimer{
+  width: 60%;
+  padding:30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  border: 1px solid #bb8002;
+  border-radius: 10px;
+  font-size:18px;
+  margin: 50px auto !important;
+}
+.main-text span{
+  font-weight: 600;
+  text-transform: uppercase !important;
+}
+.formgroup{
+  margin: 30px 5px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.formgroup label{
+  font-family: "Roboto Condensed", sans-serif;
+  color: #2940d3;
+  display: block;
+  font-size: 20px;
+}
+.formgroup input{
+  background-color: #ffeda3;
+  border: 0px;
+  font-size: 20px;
+  margin-top: 10px;
+  padding:7px 5px;
+  border: 1px solid #2940d3;
+  color: #232323;
+  transition: outline 0.1s ease-in-out;
+  width:300px;
+}
+.formgroup input:focus{
+  outline: 4px solid #39a9cb;
+}
+.btnprimary{
+  padding:7px 15px;
+  background: #39a9cb;
+  border: 0px;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
+  color:#ffeda3;
+  font-weight: 600;
+}
+.btnprimary:hover{
+  background: #bb8002;
+}
+.primary-text{
+  font-size: 20px;
+  color: #bb8002;
+  margin-top: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  
+}
+.primary-text a{
+  margin-left: 5px;
+  font-style: italic;
+  color: #39a9cb;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.2s ease-in-out;
+  
+}
+.primary-text a:hover{
+  color: #bb8002;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 5px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(129, 129, 129);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #eee;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2940d3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.btn-action{
+  background-color: #f9ab00;
+  border:0px;
+  font-family:"Roboto Condensed", sans-serif;
+  color:#212529;
+  border-radius: 20px;
+  padding:5px 7px;
+  border:1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.btn-action:hover{
+  border:1px solid #f9ab00;
+  color: #f9ab00;
+  background-color: #212529;
+}
+.btnDanger{
+  background-color: #ef4035;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  margin-top: 2px;
+}
+.btnDanger:hover{
+  background-color: #212529;
+  border:1px solid #ef4035;
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/******************************* HEADER *******************************/
+.header-wrapper {
+  position: relative;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  opacity: 70;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+/*********************** TYPED TEXT ***********************/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+/*********************** HEADER MAIN OFFER BUTTON ***********************/
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  transition: 0.2s ease-in-out;
+}
+
+/*********************** PARTICLES ***********************/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+} ;
